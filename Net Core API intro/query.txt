@@ -1,0 +1,10 @@
+CREATE TABLE users (
+  pk_users_id INT PRIMARY KEY IDENTITY(1,1),
+  name VARCHAR(255) NOT NULL,
+);
+
+CREATE TABLE tasks (
+  pk_task_id INT PRIMARY KEY IDENTITY(1,1),
+  task_detail VARCHAR(MAX),
+  fk_users_id INT NOT NULL
+);
